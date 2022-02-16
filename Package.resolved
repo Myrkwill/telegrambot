@@ -128,6 +128,24 @@
         }
       },
       {
+        "package": "SwiftRegularExpression",
+        "repositoryURL": "https://github.com/nerzh/swift-regular-expression",
+        "state": {
+          "branch": null,
+          "revision": "19c3e569a8e81da6f7f4ee3b73028c25737d3706",
+          "version": "0.2.4"
+        }
+      },
+      {
+        "package": "telegram-vapor-bot",
+        "repositoryURL": "https://github.com/nerzh/telegram-vapor-bot",
+        "state": {
+          "branch": null,
+          "revision": "d39d3ca25ea90b116bd838c5515738d39ba6659b",
+          "version": "1.4.5"
+        }
+      },
+      {
         "package": "vapor",
         "repositoryURL": "https://github.com/vapor/vapor.git",
         "state": {
