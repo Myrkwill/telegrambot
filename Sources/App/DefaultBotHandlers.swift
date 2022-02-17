@@ -46,7 +46,7 @@ final class DefaultBotHandlers {
 					guard let filePath = file.filePath else {
 						return
 					}
-					let url = "https://api.telegram.org/file/bot\(tgApi)/\(filePath)"
+					let url = "https://api.telegram.org/file/bot\(Environment.tgApi)/\(filePath)"
 					try? update.message?.reply(text: url, bot: bot)
 				})
 			}
