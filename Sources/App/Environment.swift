@@ -16,14 +16,17 @@ extension Environment {
 		return value
 	}
 
+	/// Host name the server
 	static var hostname: String {
 		return get(.hostname)
 	}
 
+	/// Port the server
 	static var port: Int {
 		return Int(get(.port)) ?? 80
 	}
 
+	/// Telegram bot API
 	static var tgApi: String {
 		return get(.tgApi)
 	}
