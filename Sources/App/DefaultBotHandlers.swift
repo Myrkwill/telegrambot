@@ -10,7 +10,6 @@ final class DefaultBotHandlers {
 
 	static func addHandlers(app: Vapor.Application, bot: TGBotPrtcl) {
 		defaultHandler(app: app, bot: bot)
-		commandPingHandler(app: app, bot: bot)
 		commandCatHandler(app: app, bot: bot)
 		commandShowButtonsHandler(app: app, bot: bot)
 		buttonsActionHandler(app: app, bot: bot)
@@ -55,13 +54,6 @@ final class DefaultBotHandlers {
 		bot.connection.dispatcher.add(handler)
 	}
 
-	private static func commandPingHandler(app: Vapor.Application, bot: TGBotPrtcl) {
-		let handler = TGCommandHandler(commands: ["/ping"]) { update, bot in
-			try update.message?.reply(text: "Первое сообщение", bot: bot)
-			try update.message?.reply(text: "Второе сообщение", bot: bot)
-		}
-		bot.connection.dispatcher.add(handler)
-	}
 
 	/// add handler for command "/show_buttons" - show message with buttons
 	private static func commandShowButtonsHandler(app: Vapor.Application, bot: TGBotPrtcl) {
